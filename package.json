@@ -1,0 +1,21 @@
+{
+  "name": "ui-perf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.7",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "dependencies": {
+    "lighthouse": "^12.3.0",
+    "puppeteer": "^24.2.1",
+    "vitest": "^3.0.4"
+  }
+}
