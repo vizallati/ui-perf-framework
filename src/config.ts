@@ -13,7 +13,20 @@ export const lighthouseConfig = {
     }
 };
 
+
 export const lighthouseFlags = {
-    output: "html",
+    output: ["json"],
     logLevel: 'info'
 };
+
+const url = "https://blog.vizallati.guru";
+
+export const pages = {
+    homepage: url + '/#',
+    activityFeed: url + '/activity-feed',
+    projects: url + '/projects',
+    testAutomationJourney: url + '/test-automation-journey',
+    devopsJourney: url + '/devops-journey',
+    otherInterest: url + '/other-interest',
+    about: url + '/about'
+}
