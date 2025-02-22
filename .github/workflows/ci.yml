@@ -12,10 +12,14 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt install nodejs -y 
+          wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          sudo apt install ./google-chrome-stable_current_amd64.deb -y
           npm install
 
       - name: Run tests
-        run: npm test run
+        run: |
+          ufw allow 9222
+          npm test run
 
 
 
