@@ -1,0 +1,22 @@
+name: Run Performance tests blog.vizallati.guru
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: |
+          sudo apt install nodejs -y 
+          npm install
+
+      - name: Run tests
+        run: npm test run
+
+
+
+
