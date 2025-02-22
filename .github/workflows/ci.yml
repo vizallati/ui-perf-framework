@@ -18,7 +18,7 @@ jobs:
 
       - name: Run tests
         run: |
-          ufw allow 9222
+          sudo ufw allow 9222
           npm test run
 
 
