@@ -1,6 +1,6 @@
 import {describe, expect, test} from "vitest";
-import {lighthouseAudit} from "../src/utils";
-import {pages} from "../src/config";
+import {lighthouseAudit} from "../../src/utils";
+import {pages} from "../../src/config";
 
 
 const defaultTimeout: number = 60000;
